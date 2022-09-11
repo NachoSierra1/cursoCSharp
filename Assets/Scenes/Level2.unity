@@ -261,6 +261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 7386850236753002436, guid: c70a0f84f4b53fe49b0aea7a652ece96, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70a0f84f4b53fe49b0aea7a652ece96, type: 3}
 --- !u!1001 &528373133
@@ -338,7 +342,7 @@ GameObject:
   - component: {fileID: 751309465}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Friendly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -519,6 +523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2073086831, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
+      propertyPath: crashClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53657a375de52244eb3e985e223da69a, type: 3}
     - target: {fileID: 700386910665710884, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
       propertyPath: m_Name
       value: Rocket
@@ -587,7 +595,7 @@ GameObject:
   - component: {fileID: 2044470908}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Friendly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

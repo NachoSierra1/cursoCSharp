@@ -7,6 +7,9 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] private int delayTime = 1;
     [SerializeField] AudioClip crashClip;
     [SerializeField] AudioClip succesClip;
+    
+    [SerializeField] ParticleSystem succesParticles;
+    [SerializeField] ParticleSystem crashParticles;
 
     private AudioSource audioSource; 
 
@@ -49,18 +52,19 @@ public class CollisionHandler : MonoBehaviour
      void StartSuccesSequence()
      {
          isTransitioning = true;
-        // todo add sfx upon succes
+        audioSource.Stop();
         audioSource.PlayOneShot(succesClip);
-        // todo add particle effect upon succes
+        succesParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel",1f);
     }
      
      void StartCrashSequence()
      {
-         // todo add sfx upon crash
+         isTransitioning = true;
+         audioSource.Stop();
          audioSource.PlayOneShot(crashClip);
-         // todo add particle effect upon crash
+         crashParticles.Play();
          GetComponent<Movement>().enabled = false;
          Invoke("ReloadScene",1f);
         

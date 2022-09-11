@@ -394,101 +394,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &601375521
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 601375525}
-  - component: {fileID: 601375524}
-  - component: {fileID: 601375523}
-  - component: {fileID: 601375522}
-  m_Layer: 0
-  m_Name: Fuel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &601375522
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601375521}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &601375523
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601375521}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &601375524
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601375521}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &601375525
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601375521}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.84, y: 7.516, z: -0.54}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &843267527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,6 +448,10 @@ PrefabInstance:
     - target: {fileID: 7386850236753002436, guid: c70a0f84f4b53fe49b0aea7a652ece96, type: 3}
       propertyPath: m_Name
       value: Landing Pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386850236753002436, guid: c70a0f84f4b53fe49b0aea7a652ece96, type: 3}
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70a0f84f4b53fe49b0aea7a652ece96, type: 3}
@@ -696,10 +605,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch Pad
       objectReference: {fileID: 0}
-    - target: {fileID: 7386850236753002436, guid: c70a0f84f4b53fe49b0aea7a652ece96, type: 3}
-      propertyPath: m_TagString
-      value: Respawn
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70a0f84f4b53fe49b0aea7a652ece96, type: 3}
 --- !u!1001 &3589464834995525607
@@ -709,29 +614,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2073086824, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2073086831, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
-      propertyPath: crashClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ef2bfbbff806220429e605a75524c83e, type: 3}
-    - target: {fileID: 2073086831, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
-      propertyPath: delayTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2073086831, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
-      propertyPath: succesClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 49ff3815c5865e54ebafaa1d404b3206, type: 3}
     - target: {fileID: 700386910665710884, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
       propertyPath: m_Name
       value: Rocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 700386910665710884, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2406457923223857474, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
       propertyPath: m_RootOrder
@@ -777,10 +662,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3589464834995525609, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
-      propertyPath: mainEngine
-      value: 
-      objectReference: {fileID: 8300000, guid: 225fabe11da78ce4d80b45358365daee, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31991aaa077a9064bb6c45438ff48f44, type: 3}
 --- !u!1001 &9086522395081904186
@@ -797,10 +678,6 @@ PrefabInstance:
     - target: {fileID: 4921782857189558689, guid: 1478a23b0fb0f2049b9097a5e4891984, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921782857189558689, guid: 1478a23b0fb0f2049b9097a5e4891984, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 29.967
       objectReference: {fileID: 0}
     - target: {fileID: 4921782857189558689, guid: 1478a23b0fb0f2049b9097a5e4891984, type: 3}
       propertyPath: m_LocalPosition.x
